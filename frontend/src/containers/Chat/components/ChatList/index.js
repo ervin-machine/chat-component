@@ -110,7 +110,7 @@ function ChatList(props) {
                                 </div>
                                 <div>
                                     <button className='chat-name' onClick={() => handleSelectChat(user)} key={user.user_id}>
-                                        {user.name}
+                                        {user.nickname}
                                     </button>
                                     <p>{user.status}</p>
                                     {user.optionOpen ? <UserOptionsModal handleUserOption={handleUserOption} user={user} handleReportOpen={handleReportOpen} /> : null}
