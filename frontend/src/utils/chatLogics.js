@@ -96,6 +96,7 @@ export const onUserOption = (usersList, id, option, loggedUser) => {
 }
 
 export const onRemovedUser = (usersList, loggedUser) => {
+    // eslint-disable-next-line 
     let currentUser = usersList.filter(user => {
         if(user?.user_id === loggedUser?.user_id) {
             return user

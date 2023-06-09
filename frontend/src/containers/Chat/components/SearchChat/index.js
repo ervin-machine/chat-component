@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 function SearchChat(props) {
-  const { usersList, setUsersList, searchValue, setSearchValue} = props
+  const { setSearchValue} = props
 
   const handleSearchValue = (e) => {
     setSearchValue(e.target.value)
