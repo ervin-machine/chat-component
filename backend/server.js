@@ -119,9 +119,9 @@ io.use((socket, next) => {
   socket.username = username;
   socket.id = id
 
-  const test = users.some(user => user.user_id === id)
+  const newRegisteredUser = users.some(user => user.user_id === id)
 
-  if(!test) {
+  if(!newRegisteredUser) {
     const newVal = [...users, {
       user_id: id,
       name: username,
